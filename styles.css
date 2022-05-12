@@ -5,7 +5,9 @@
 }
 body{
     background-color: hsl(217, 54%, 11%);
-    color: hsl(215, 32%, 27%);
+    color: hsl(220, 15%, 55%);
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px;;
 }
 #card-container{
     position: absolute;
@@ -16,8 +18,7 @@ body{
     transform: translateX(-50%) translateY(-50%);
     border-radius: 20px;
     padding:18px;
-    text-align: center;
-    width: 20rem; 
+    width: 24rem; 
     min-width:335px; 
     background-color: hsl(216, 50%, 16%);
 }
@@ -25,6 +26,15 @@ body{
 .hoverimage{
     display:none;
 }
-/* .container{
-    background-color: ;
-} */
+.hoverimage:hover{
+    display:block;
+}
+
+a{
+    color:white;
+    text-decoration: none;
+}
+
+a:hover{
+    color: hsl(178, 100%, 50%);
+}
