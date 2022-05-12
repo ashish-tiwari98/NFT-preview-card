@@ -26,25 +26,33 @@
   <div class="container-sm">
     <div class="row">
       <div id="card-container" class="card" >
-        <img src="images/image-equilibrium.jpg" class="card-img-top" style="border-radius:15px;" alt="Equilibrium-image">
-        <span class="hoverimage"><img src="images/icon-view.svg" ></span>
+        <img src="images/image-equilibrium.jpg" class="card-img-top round mainimage"  alt="Equilibrium-image">
+        <div class="rectangle round objdisplay"></div>
+        <img class="hoverimage objdisplay" src="images/icon-view.svg"  alt="eye view">
         <div class="card-body">
-          <h5 class="card-title" style="color:white;font-weight: bold;"><a href="">Equilibrium #3429</a></h5>
-          <p class="card-text pt-2" >  Our Equilibrium collection promotes balance and calm.</p>
+          <h5 class="card-title font-weight-bold text-white"><a href="">Equilibrium #3429</a></h5>
+          <p class="card-text pt-2">  Our Equilibrium collection promotes balance and calm.</p>
           <div class="mt-3">
-            <p style="position: relative;float: left; color:hsl(178, 100%, 50%)"><img src="images/icon-ethereum.svg" class="mr-3">0.041 ETH</p>
-            <p style="position: relative;float: right; color:hsl(220, 15%, 55%);"><img src="images/icon-clock.svg" class="mr-3" >3 days left</p>
+            <p class="left"><img src="images/icon-ethereum.svg" alt="ethereum">0.041 ETH</p>
+            <p class="right"><img src="images/icon-clock.svg" alt="clock">3 days left</p>
           </div>
-          <hr style="clear:both;height:2px;">
+          <hr class="line">
        <div style=" height:30px" class="align-items-start">
-       <p><img src="images/image-avatar.png" style="height: 30px; width: 30px; border:1px solid white; border-radius: 100%; margin-right:10px;"><span>Creation of <a href="">Jules Wyvern</a></span></p>
+       <p><img src="images/image-avatar.png" alt="avatar image" class="avatar">Creation of <a href="">Jules Wyvern</a></p>
       </div>
-        </div>
+      </div>
       </div>
     </div>
   </div>
 </body>
 <script>
-  $(".card-img-top").css.display("")
+   $(document).ready(function () {
+    $(".mainimage").mouseover(function () {
+      $(".objdisplay").css('display', 'block');
+    });
+    $(".mainimage").mouseout(function () {
+      $(".objdisplay").css('display', 'none');
+    });
+  });
 </script>
 </html>
